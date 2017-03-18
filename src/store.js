@@ -3,6 +3,7 @@ import { applyMiddleware, createStore } from 'redux';
 import reduxThunk from 'redux-thunk';
 import createLogger from 'redux-logger';
 import { Map } from 'immutable';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 // Aliased
 import { isImmutable } from 'utils/immutable';
@@ -22,5 +23,5 @@ if (config.env === 'development') {
   middleware.push(logger);
 }
 
-const enhancer = applyMiddleware(...middleware);
+const enhancer = composeWithDevTools(applyMiddleware(...middleware));
 export default createStore(reducers, Map({}), enhancer);
