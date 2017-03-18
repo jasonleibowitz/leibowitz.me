@@ -57,6 +57,7 @@ const jsxLoader = {
   ],
 };
 
+/* eslint-disable max-statements */
 module.exports = function webpackConfigFactory({ env = 'development' } = {}) {
   // FIXME: things break if alias is required outside of this func. - CD
   const alias = require('../alias');
@@ -254,3 +255,4 @@ module.exports = function webpackConfigFactory({ env = 'development' } = {}) {
 
   return webpackConfig;
 };
+/* eslint-enable max-statements */

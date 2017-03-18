@@ -27,4 +27,4 @@ module.exports = {
   data: fromSrc('static/data'),
   fonts: fromSrc('static/fonts'),
   images: fromSrc('static/images'),
-}
+};
