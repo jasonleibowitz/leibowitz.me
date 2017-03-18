@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node ./build/server.js",
-    "test": "NODE_ENV=test && mocha --reporter=list --compilers js:babel-core/register --require babel-polyfill --require ./tests/test.bootstrap.js $(find . ! -path '*node_modules*' -name '*.test.js*')",
+    "test": "NODE_ENV=test mocha --reporter=list --compilers js:babel-core/register --require babel-polyfill --require ./tests/test_helper.js $(find . ! -path '*node_modules*' -name '*.test.js*')",
     "test-watch": "NODE_ENV=test && mocha --compilers js:babel-core/register --reporter=min --watch --require babel-polyfill --require ./tests/test.bootstrap.js $(find . ! -path '*node_modules*' -name '*.test.js*')"
   },
   "author": "",
