@@ -9,7 +9,7 @@
   "scripts": {
     "init": "rm -rf ./node_modules && yarn install",
     "build": "rm -rf ./dist && yarn install && node ./build/build.js",
-    "start": "node ./build/server.js",
+    "start": "webpack-dashboard -- node ./build/server.js",
     "test": "NODE_ENV=test mocha --reporter=list --compilers js:babel-core/register --require babel-polyfill --require ./tests/test_helper.js $(find . ! -path '*node_modules*' -name '*.test.js*')",
     "test-watch": "NODE_ENV=test mocha --compilers js:babel-core/register --reporter=min --watch --require babel-polyfill --require ./tests/test_helper.js $(find . ! -path '*node_modules*' -name '*.test.js*')",
     "lint": "eslint $(find . ! -path '*node_modules*' ! -path '*dist*' ! -path '*coverage*' -type f | egrep '[.]jsx?$')",
@@ -75,6 +75,7 @@
     "style-loader": "^0.14.1",
     "url-loader": "^0.5.8",
     "webpack": "^2.2.1",
+    "webpack-dashboard": "^0.3.0",
     "webpack-dev-server": "^2.4.2"
   },
   "devDependencies": {

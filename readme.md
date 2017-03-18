@@ -33,8 +33,8 @@ Kickstart a production-grade, scalable, and performant React/Redux application.
 - [x] [Babel 6](https://babeljs.io/) - transpiler from ES6 / JSX to ES5
 - [x] [PostCSS](http://postcss.org/) - ecosystem of custom plugins and tools aimed at transforming extended syntaxes and features into modern, browser-friendly CSS
 - [x] [CSS Modules](https://github.com/css-modules/css-modules) - guarantee that all the styles for a single component, designed to fix the problem of the global scope in CSS
-- [ ] [Redux DevTools](https://github.com/gaearon/redux-devtools) - a live-editing environment for your Redux apps (and as a [browser extension](https://github.com/zalmoxisus/redux-devtools-extension))
-- [ ] [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard) - CLI dashboard for your Webpack dev server
+- [x] [Redux DevTools](https://github.com/gaearon/redux-devtools) - a live-editing environment for your Redux apps (and as a [browser extension](https://github.com/zalmoxisus/redux-devtools-extension))
+- [x] [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard) - CLI dashboard for your Webpack dev server
 - [x] [ESLint](http://eslint.org/docs/user-guide/configuring) - reporter for syntax and style issues
 - [ ] [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) & [eslint-plugin-flow](https://github.com/gajus/eslint-plugin-flowtype) - additional React/Flow type specific linting rules for ESLint
 - [x] [Sass](http://sass-lang.com/) - compiler of CSS styles with variables, mixins, and more

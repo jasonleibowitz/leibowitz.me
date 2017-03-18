@@ -7,6 +7,7 @@ const { join, resolve } = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 const precss = require('precss');
 const autoprefixer = require('autoprefixer');
 const postcssCalc = require('postcss-calc');
@@ -196,6 +197,7 @@ module.exports = function webpackConfigFactory({ env = 'development' } = {}) {
       alias,
     },
     plugins: [
+      new DashboardPlugin({ port: 3000 }),
       new ExtractTextPlugin({
         filename: 'bundle.css',
       }),
