@@ -1,0 +1,32 @@
+@import 'styles/vars';
+@import 'styles/fonts';
+
+:global html {
+  height: 100%;
+  font-family: $default-font-family;
+  /* root font size enables obvious rem values (16px = 1.6rem) */
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+:global body {
+  font-size: $default-font-size;
+  color: $default-font-color;
+  font-family: inherit;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+:global h1,
+:global h2,
+:global h3,
+:global h4,
+:global h5,
+:global h6 {
+  font-family: $default-font-family;
+}

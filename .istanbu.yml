@@ -1,0 +1,29 @@
+instrumentation:
+    root: .
+    extensions:
+        - .js
+        - .jsx
+    excludes: ['build/**']
+reporting:
+    print: detail
+    reports:
+        - lcov
+    dir: ./coverage
+    watermarks:
+        statements: [65, 90]
+        lines: [65, 90]
+        functions: [65, 90]
+        branches: [65, 90]
+check:
+    global:
+        statements: 69
+        branches: 57
+        functions: 58
+        lines: 83
+        excludes: []
+    each:
+        statements: 0
+        lines: 0
+        branches: 0
+        functions: 0
+        excludes: []
