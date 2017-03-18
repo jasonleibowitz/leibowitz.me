@@ -11,7 +11,7 @@
     "build": "rm -rf ./dist && yarn install && node ./build/build.js",
     "start": "node ./build/server.js",
     "test": "NODE_ENV=test mocha --reporter=list --compilers js:babel-core/register --require babel-polyfill --require ./tests/test_helper.js $(find . ! -path '*node_modules*' -name '*.test.js*')",
-    "test-watch": "NODE_ENV=test && mocha --compilers js:babel-core/register --reporter=min --watch --require babel-polyfill --require ./tests/test_helper.js $(find . ! -path '*node_modules*' -name '*.test.js*')",
+    "test-watch": "NODE_ENV=test mocha --compilers js:babel-core/register --reporter=min --watch --require babel-polyfill --require ./tests/test_helper.js $(find . ! -path '*node_modules*' -name '*.test.js*')",
     "lint": "eslint $(find . ! -path '*node_modules*' ! -path '*dist*' ! -path '*coverage*' -type f | egrep '[.]jsx?$')",
     "cover": "NODE_ENV=test babel-node node_modules/.bin/babel-istanbul cover _mocha -- --reporter=min --require ./tests/test.bootstrap.js $(find . ! -path '*node_modules*' -name '*.test.js') && babel-node node_modules/.bin/babel-istanbul check-cover"
   },
