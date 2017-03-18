@@ -5,12 +5,12 @@ Kickstart a production-grade, scalable, and performant React/Redux application.
 
 
 ## Table of Contents
-* [Features](#Features)
-* [Getting Started](#Getting-Started)
-* [Usage](#Usage)
-* [Tests](#Tests)
-* [Dependencies](#Dependencies)
-* [Style Guide](#Style-Guide)
+* [Features](#features)
+* [Getting Started](#getting-started)
+* [Usage](#usage)
+* [Tests](#tests)
+* [Dependencies](#dependencies)
+* [Style Guide](#style-guide)
 
 ## Features
 ## Getting Started
