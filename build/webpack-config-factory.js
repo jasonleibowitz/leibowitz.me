@@ -203,7 +203,9 @@ module.exports = function webpackConfigFactory({ env = 'development' } = {}) {
       }),
       new webpack.HotModuleReplacementPlugin(),
       new HtmlWebpackPlugin({
-        title: 'RFR Web: Do the Thing!',
+        title: 'Jason Leibowitz | Software Engineer',
+        favicon: join(src, 'static/images/favicon.ico'),
+        description: 'Jason Leibowitz, Software Engineer',
         template: join(src, 'static/index-template.ejs'),
       }),
       new webpack.DefinePlugin({

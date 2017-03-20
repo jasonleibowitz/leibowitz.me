@@ -36,10 +36,9 @@ try {
   render((
     <Provider store={ store }>
       <Router routes={ routes }>
-        <div>
-          <Index />
+        <Index>
           { routes }
-        </div>
+        </Index>
       </Router>
     </Provider>
   ), rootDomElement);
